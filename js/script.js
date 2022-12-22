@@ -42,7 +42,7 @@ function start() {
   setTimeout(() => {
     clearInterval(randomizer);
     $("#divSelected").text(decidedName);
-  }, 3000);
+  }, 7000);
 }
 
 function randomRange(myMin, myMax) {
