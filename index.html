@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGBC Raffle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>   
+    <div class="wrapper">
+        <div class="list-container">
+          <label>List of names</label>
+          <textarea id="txtList">
+        Enter a list of names
+          </textarea>
+        </div>
+        <div class="spinner-container">
+
+            <div class="logo" id="logo">
+                <img src="img/logo.png" alt="Tough Guy Book Club logo">
+            </div>
+
+            <h1>2022 Book Raffle</h1>
+      
+          <div class="name" id="divSelected">
+            Choose a winner
+          </div>
+          <button class="spinner-button" onclick="start()">Random Pick</button>
+          <a href="#" onclick="toggleList()">Toggle List</a>
+      
+        </div>
+      </div>
+
+</body>
+</html>

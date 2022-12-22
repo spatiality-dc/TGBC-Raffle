@@ -1,0 +1,136 @@
+* {
+  background: #090808;
+  color: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.list-container {
+  flex: 0 0 20%;
+  display: none;
+  flex-direction: column;
+}
+
+.wrapper.show .list-container {
+  display: flex;
+}
+
+label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  flex-grow: 1;
+  background-color: #090808;
+  border: 1px solid #090808;
+  padding: 0.5rem;
+}
+
+.spinner-container {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 2rem;
+  border: 1px solid #aaa;
+  padding: 1.5em;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  color: red;
+  box-shadow: inset 0em 0.5em 0.75em 0em rgba(0, 0, 0, 0.45),
+    inset 0em -0.5em 0.75em 0em rgba(0, 0, 0, 0.45),
+    inset 1em 0em 0.7em 0.5em rgba(255, 255, 255, 1),
+    0em 0em 0.75em 0em rgba(0, 0, 0, 0.25);
+  border-radius: 0.15em;
+  position: relative;
+}
+
+.name:before,
+.name:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.name:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+button {
+  color: #090808;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 2em;
+  font-size: 1.5em;
+  border-radius: 0.25em;
+  border: none;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0em 0.25em 0.5em 0em rgba(0, 0, 0, 0.5);
+}
+
+.spinner-button {
+  background-color:white;
+}
+
+.spinner-button:hover {
+  background-color:#F9EAC8;
+  color: black;
+}
+
+.logo {
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+img {
+  max-width: 200px;
+  padding-bottom: 2em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-top: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
